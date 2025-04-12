@@ -31,14 +31,14 @@ return {
       },
     },
   },
-  
+
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
-    config = function ()
+    config = function()
       require("nvim-treesitter.configs").setup({
-        ensure_installed = { 
-          "lua", 
+        ensure_installed = {
+          "lua",
           "c_sharp",
           "typescript",
           "html",
@@ -50,13 +50,13 @@ return {
         hightlight = { enabled = true },
         sync_install = false,
       })
-    end, 
+    end,
     opts = {
       ensure_installed = {
-        "vim", 
-        "lua", 
+        "vim",
+        "lua",
         "vimdoc",
-        "html", 
+        "html",
         "css"
       },
     },
@@ -82,7 +82,6 @@ return {
     "tpope/vim-fugitive",
     cmd = { "Git" },
     config = function()
-    
     end,
   },
 
@@ -95,7 +94,7 @@ return {
     },
   },
 
-  -- plugins d'autocomplétion csharp 
+  -- plugins d'autocomplétion csharp
   {
     "hrsh7th/nvim-cmp",
     dependencies = {
