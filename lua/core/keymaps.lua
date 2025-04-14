@@ -27,5 +27,5 @@ keymap("n", "<C-k>", "<C-w>k", { desc = "Déplace le curseur dans la fenêtre du
 keymap("n", "<C-l>", "<C-w>l", { desc = "Déplace le curseur dans la fenêtre droite" })
 
 -- Sortir mode insertion terminal 
-vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]])
-
+keymap('t', '<C-x>', [[<C-\><C-n>]], { noremap = true, silent = true, desc = "Terminal: exit to normal mode" })
+keymap('n', '<leader>q', ':bd!<CR>', { noremap = true, silent = true, desc = "Force close buffer" })
