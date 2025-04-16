@@ -38,9 +38,9 @@ vim.schedule(function()
   require "mappings"
 end)
 
-if vim.fn.has("win32") == 1 then
-  -- Config Windows spécifique
-  vim.o.shell = "bash"
-elseif vim.fn.has("unix") == 1 then
-  -- Config Mac/Linux spécifique
-end
+-- if vim.fn.has("win32") == 1 then
+--   -- Config Windows spécifique
+--   vim.o.shell = "bash"
+-- elseif vim.fn.has("unix") == 1 then
+--   -- Config Mac/Linux spécifique
+-- end

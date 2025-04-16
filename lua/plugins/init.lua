@@ -103,4 +103,5 @@ return {
       "hrsh7th/cmp-path",     -- pour compléter les chemins
     },
   },
+
 }

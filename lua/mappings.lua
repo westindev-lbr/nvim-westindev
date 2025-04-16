@@ -1,6 +1,7 @@
 require "nvchad.mappings"
 
 local map = vim.keymap.set
+local nvterm = require("nvterm.terminal")
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 
@@ -31,6 +32,10 @@ map("n", "<leader>fm", function()
 end, { desc = "Formater le fichier (Format)" })
 map("n", "<leader>gb", "<C-o>", { desc = "Remonter en arrière après gd" })
 map("n", "<C-a>", "ggVG\"+y", { desc = "Tout sélectionner et copier" })
+map("n", "<leader>h", function()
+  nvterm.new("horizontal")
+end, { noremap = true, silent = true }
+)
 
 
 -- MODE INSERTION  
